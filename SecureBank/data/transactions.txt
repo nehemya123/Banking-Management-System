@@ -1,0 +1,2 @@
+1001: Account created with initial deposit $200.000000
+1001: Deposited $100.000000

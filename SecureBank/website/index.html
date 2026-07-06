@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureBank Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SecureBank</h1>
+    <p>C++ Banking Management System Web Prototype</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Create Account</h2>
+      <input type="text" id="name" placeholder="Full name" />
+      <input type="password" id="pin" placeholder="4-digit PIN" />
+      <input type="number" id="deposit" placeholder="Initial deposit" />
+      <button onclick="createAccount()">Create Account</button>
+      <p id="accountResult"></p>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <input type="number" id="loginAccount" placeholder="Account number" />
+      <input type="password" id="loginPin" placeholder="PIN" />
+      <button onclick="login()">Login</button>
+      <p id="loginResult"></p>
+    </section>
+
+    <section class="card dashboard hidden" id="dashboard">
+      <h2>Dashboard</h2>
+      <p id="welcomeText"></p>
+      <h3 id="balanceText"></h3>
+
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="depositMoney()">Deposit</button>
+      <button onclick="withdrawMoney()">Withdraw</button>
+      <input type="number" id="receiverAccount" placeholder="Receiver account number" />
+      <button onclick="transferMoney()">Transfer</button>
+
+      <h3>Transaction History</h3>
+      <ul id="transactions"></ul>
+
+      <button class="logout" onclick="logout()">Logout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Nehemya Assefa | DevAlpha C++ Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
