@@ -11,39 +11,6 @@ A modern banking management system developed with **C++** and a responsive **HTM
 Developed as part of the **DevAlpha C++ Programming Internship (June–July 2026).**
 
 ---
-
-# Screenshots
-
-> Add your screenshots to the folder:
-
-```text
-assets/screenshots/
-```
-
-### Landing Page
-
-![Landing Page](assets/screenshots/landing-page.png)
-
----
-
-### Login
-
-![Login](assets/screenshots/login.png)
-
----
-
-### Create Account
-
-![Create Account](assets/screenshots/signup.png)
-
----
-
-### Dashboard
-
-![Dashboard](assets/screenshots/dashboard.png)
-
----
-
 # Features
 
 ## C++ Banking Application
