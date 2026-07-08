@@ -227,6 +227,33 @@ function login() {
         });
 }
 
+function downloadCSV() {
+    if (!currentUser || !currentUser.transactions || currentUser.transactions.length === 0) {
+      alert("No transactions to download.");
+      return;
+    }
+  
+    let csvContent = "Transaction History\n\n";
+    csvContent += "Account Number," + currentUser.accountNumber + "\n";
+    csvContent += "Account Holder," + currentUser.name + "\n";
+    csvContent += "Current Balance,$" + currentUser.balance.toFixed(2) + "\n\n";
+    csvContent += "Transaction\n";
+  
+    currentUser.transactions.forEach(transaction => {
+      csvContent += `"${transaction}"\n`;
+    });
+  
+    const blob = new Blob([csvContent], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+  
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `SecureBank_Statement_${currentUser.accountNumber}.csv`;
+    link.click();
+  
+    URL.revokeObjectURL(url);
+  }
+
   
   function logout() {
     localStorage.removeItem("currentUser");

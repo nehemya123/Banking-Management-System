@@ -413,3 +413,18 @@
   .stats-grid h2 {
     margin-top: 8px;
   }
+  .transactions-card button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .transactions-card button:hover {
+    opacity: 0.9;
+  }

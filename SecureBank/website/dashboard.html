@@ -55,16 +55,18 @@
 
         <div class="transactions-card">
             <h3>Recent Transactions</h3>
-        
+          
             <input
-                type="text"
-                id="searchTransaction"
-                placeholder=" Search transactions..."
-                onkeyup="searchTransactions()"
+              type="text"
+              id="searchTransaction"
+              placeholder=" Search transactions..."
+              onkeyup="searchTransactions()"
             />
-        
+          
+            <button onclick="downloadCSV()">Download Statement</button>
+          
             <ul id="transactions"></ul>
-        </div>
+          </div>
 
         <div class="chart-card">
           <h3>Weekly Activity</h3>
