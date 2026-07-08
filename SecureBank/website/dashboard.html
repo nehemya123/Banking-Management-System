@@ -54,8 +54,16 @@
         </div>
 
         <div class="transactions-card">
-          <h3>Recent Transactions</h3>
-          <ul id="transactions"></ul>
+            <h3>Recent Transactions</h3>
+        
+            <input
+                type="text"
+                id="searchTransaction"
+                placeholder=" Search transactions..."
+                onkeyup="searchTransactions()"
+            />
+        
+            <ul id="transactions"></ul>
         </div>
 
         <div class="chart-card">
@@ -75,3 +83,24 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+<div class="stats-card">
+    <h3>Account Stats</h3>
+    <div class="stats-grid">
+      <div>
+        <p>Total Transactions</p>
+        <h2 id="totalTransactions">0</h2>
+      </div>
+      <div>
+        <p>Deposits</p>
+        <h2 id="depositCount">0</h2>
+      </div>
+      <div>
+        <p>Withdrawals</p>
+        <h2 id="withdrawCount">0</h2>
+      </div>
+      <div>
+        <p>Transfers</p>
+        <h2 id="transferCount">0</h2>
+      </div>
+    </div>
+  </div>
