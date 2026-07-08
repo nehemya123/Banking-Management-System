@@ -1,69 +1,145 @@
 # SecureBank – Modern Banking Management System
 
-SecureBank is a banking management system built with **C++** and a modern **HTML, CSS, and JavaScript** web prototype. The project allows users to create accounts, log in, deposit money, withdraw money, transfer funds, and view transaction history.
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue?logo=cplusplus)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)
+![Git](https://img.shields.io/badge/Git-Version%20Control-orange?logo=git)
 
-This project was created for the **DevAlpha C++ Programming Internship Program**.
+A modern banking management system developed with **C++** and a responsive **HTML, CSS, and JavaScript** web prototype. The project demonstrates object-oriented programming, file handling, authentication, banking operations, and a modern fintech-inspired user interface.
 
-##  Features
-
-* Create bank accounts
-* Login using account number and PIN
-* Deposit money
-* Withdraw money
-* Transfer money between accounts
-* View transaction history
-* Admin view for all accounts
-* File-based data storage in C++
-* Responsive web prototype
-* Modern fintech-style dashboard
+Developed as part of the **DevAlpha C++ Programming Internship (June–July 2026).**
 
 ---
 
-##  Technologies Used
+# Screenshots
+
+> Add your screenshots to the folder:
+
+```text
+assets/screenshots/
+```
+
+### Landing Page
+
+![Landing Page](assets/screenshots/landing-page.png)
+
+---
+
+### Login
+
+![Login](assets/screenshots/login.png)
+
+---
+
+### Create Account
+
+![Create Account](assets/screenshots/signup.png)
+
+---
+
+### Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+# Features
+
+## C++ Banking Application
+
+* Create new bank accounts
+* Secure account login
+* Deposit funds
+* Withdraw funds
+* Transfer money between accounts
+* View account balance
+* View transaction history
+* Administrator dashboard
+* Persistent file storage
+* Object-Oriented Programming architecture
+
+---
+
+## Web Prototype
+
+* Responsive banking interface
+* Modern fintech-inspired dashboard
+* Account registration
+* User authentication
+* Deposit and withdrawal system
+* Money transfer simulation
+* Dashboard analytics
+* Transaction search
+* Transaction timestamps
+* CSV statement download
+* Account lock after three failed login attempts
+* Local browser storage simulation
+
+---
+
+# Technologies Used
+
+### Programming Languages
 
 * C++
-* Object-Oriented Programming
-* File Handling
-* STL Vectors
 * HTML5
 * CSS3
 * JavaScript
-* Git and GitHub
+
+### Software Engineering
+
+* Object-Oriented Programming (OOP)
+* File Handling
+* STL (Standard Template Library)
+* Modular Project Architecture
+* Git
+* GitHub
 
 ---
 
-##  Project Structure
+# Project Structure
 
 ```text
 Banking-Management-System/
+│
 ├── include/
 │   ├── Account.h
 │   └── Bank.h
+│
 ├── src/
 │   ├── main.cpp
 │   ├── Account.cpp
 │   └── Bank.cpp
+│
 ├── data/
 │   ├── accounts.txt
 │   └── transactions.txt
+│
 ├── website/
 │   ├── index.html
-│   ├── signup.html
 │   ├── login.html
+│   ├── signup.html
 │   ├── dashboard.html
+│   │
 │   ├── css/
 │   │   └── style.css
-│   └── js/
-│       └── script.js
-├── assets/
-│   └── screenshots/
+│   │
+│   ├── js/
+│   │   ├── script.js
+│   │   ├── auth.js
+│   │   ├── dashboard.js
+│   │   └── storage.js
+│   │
+│   └── assets/
+│
 ├── Makefile
 └── README.md
 ```
 
 ---
 
-##  How to Run the C++ Application
+# Running the C++ Application
 
 Clone the repository:
 
@@ -72,7 +148,7 @@ git clone https://github.com/nehemya123/Banking-Management-System.git
 cd Banking-Management-System
 ```
 
-Run using Makefile:
+Using the Makefile:
 
 ```bash
 make run
@@ -87,48 +163,77 @@ g++ -std=c++17 src/main.cpp src/Account.cpp src/Bank.cpp -o SecureBank
 
 ---
 
-##  How to Run the Web Prototype
+# Running the Web Prototype
 
-Open this file in your browser:
+Open the following file in your browser:
 
 ```text
 website/index.html
 ```
 
-The web prototype uses browser local storage to simulate account creation, login, deposits, withdrawals, transfers, and transaction history.
+The web prototype demonstrates the user interface and banking workflow using browser local storage.
 
 ---
 
-##  What I Learned
+# Skills Demonstrated
 
-Through this project, I practiced:
-
-* Building a modular C++ project
-* Using header and implementation files
-* Applying object-oriented programming
-* Reading from and writing to files
-* Managing user input and validation
-* Creating a web prototype with HTML, CSS, and JavaScript
-* Organizing a project for GitHub
-
----
-
-##  Future Improvements
-
-* Connect the web interface to a real backend
-* Add database support using MySQL or PostgreSQL
-* Encrypt user PINs/passwords
-* Add two-factor authentication
-* Generate PDF bank statements
-* Add spending analytics
-* Add account types such as checking and savings
-* Deploy the web prototype online
+* Object-Oriented Programming
+* Software Design
+* File Input/Output
+* User Authentication
+* Financial Transaction Processing
+* Responsive Web Design
+* Front-End Development
+* Git Version Control
+* Problem Solving
+* Software Documentation
 
 ---
 
-##  Author
+# Future Improvements
+
+* Database integration (MySQL or PostgreSQL)
+* Password encryption
+* REST API backend
+* User profile management
+* Spending analytics with interactive charts
+* Email notifications
+* Two-factor authentication
+* Mobile application
+* Cloud deployment
+
+---
+
+# Project Highlights
+
+✔ Modular C++ architecture
+
+✔ Modern fintech-style web interface
+
+✔ Secure authentication workflow
+
+✔ Dashboard analytics
+
+✔ Transaction search
+
+✔ CSV statement export
+
+✔ Account security with login lockout
+
+✔ Responsive UI
+
+---
+
+# Author
 
 **Nehemya Assefa**
+
+Computer Science Student
+University of Minnesota
+
 DevAlpha C++ Programming Internship
 June 2026 – July 2026
 
+---
+
+### If you found this project interesting, feel free to star the repository.
