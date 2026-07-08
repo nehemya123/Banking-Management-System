@@ -1,4 +1,4 @@
-# 🏦 SecureBank – Modern Banking Management System
+# SecureBank – Modern Banking Management System
 
 SecureBank is a banking management system built with **C++** and a modern **HTML, CSS, and JavaScript** web prototype. The project allows users to create accounts, log in, deposit money, withdraw money, transfer funds, and view transaction history.
 
