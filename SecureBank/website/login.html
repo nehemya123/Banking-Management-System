@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | SecureBank</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2 class="logo">SecureBank</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="signup.html">Open Account</a>
+    </div>
+  </nav>
+
+  <section class="form-page">
+    <div class="form-card">
+      <h1>Welcome Back</h1>
+      <p>Login to your SecureBank account.</p>
+
+      <input type="number" id="loginAccount" placeholder="Account number" />
+      <input type="password" id="loginPin" placeholder="PIN" />
+
+      <button onclick="login()">Login</button>
+
+      <p id="loginResult"></p>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

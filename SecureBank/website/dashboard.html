@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | SecureBank</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark-app">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <h2>SecureBank</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#">Transfers</a>
+      <a href="#">Transactions</a>
+      <a href="#">Settings</a>
+      <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+      <section class="dashboard-header">
+        <div>
+          <p>Welcome back</p>
+          <h1 id="userName">User</h1>
+        </div>
+        <div class="profile-circle">SB</div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="balance-card">
+          <p>Total Balance</p>
+          <h2 id="balance">$0.00</h2>
+          <span>SecureBank Checking</span>
+        </div>
+
+        <div class="virtual-card">
+          <p>SecureBank Card</p>
+          <h3>**** **** **** 2847</h3>
+          <span id="cardName">Account Holder</span>
+        </div>
+
+        <div class="action-card">
+          <h3>Quick Actions</h3>
+          <input type="number" id="amount" placeholder="Amount" />
+          <button onclick="depositMoney()">Deposit</button>
+          <button onclick="withdrawMoney()">Withdraw</button>
+        </div>
+
+        <div class="action-card">
+          <h3>Transfer Money</h3>
+          <input type="number" id="receiverAccount" placeholder="Receiver account number" />
+          <input type="number" id="transferAmount" placeholder="Amount" />
+          <button onclick="transferMoney()">Transfer</button>
+        </div>
+
+        <div class="transactions-card">
+          <h3>Recent Transactions</h3>
+          <ul id="transactions"></ul>
+        </div>
+
+        <div class="chart-card">
+          <h3>Weekly Activity</h3>
+          <div class="bars">
+            <span style="height: 50%"></span>
+            <span style="height: 75%"></span>
+            <span style="height: 40%"></span>
+            <span style="height: 90%"></span>
+            <span style="height: 60%"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

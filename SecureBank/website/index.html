@@ -3,55 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SecureBank Prototype</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SecureBank | Modern Digital Banking</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>SecureBank</h1>
-    <p>C++ Banking Management System Web Prototype</p>
-  </header>
+  <nav class="navbar">
+    <h2 class="logo">SecureBank</h2>
+    <div>
+      <a href="login.html">Login</a>
+      <a class="btn small" href="signup.html">Open Account</a>
+    </div>
+  </nav>
 
-  <main>
-    <section class="card">
-      <h2>Create Account</h2>
-      <input type="text" id="name" placeholder="Full name" />
-      <input type="password" id="pin" placeholder="4-digit PIN" />
-      <input type="number" id="deposit" placeholder="Initial deposit" />
-      <button onclick="createAccount()">Create Account</button>
-      <p id="accountResult"></p>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">C++ Banking Management System</p>
+      <h1>Banking made simple, secure, and modern.</h1>
+      <p>
+        SecureBank is a banking system prototype built with C++ and a responsive web interface.
+        Create accounts, manage balances, transfer money, and track transactions.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn" href="signup.html">Create Account</a>
+        <a class="btn outline" href="login.html">Login</a>
+      </div>
+    </div>
 
-    <section class="card">
-      <h2>Login</h2>
-      <input type="number" id="loginAccount" placeholder="Account number" />
-      <input type="password" id="loginPin" placeholder="PIN" />
-      <button onclick="login()">Login</button>
-      <p id="loginResult"></p>
-    </section>
+    <div class="bank-card">
+      <p>SecureBank Card</p>
+      <h2>$4,280.50</h2>
+      <span>**** **** **** 2847</span>
+      <small>Nehemya Assefa</small>
+    </div>
+  </section>
 
-    <section class="card dashboard hidden" id="dashboard">
-      <h2>Dashboard</h2>
-      <p id="welcomeText"></p>
-      <h3 id="balanceText"></h3>
-
-      <input type="number" id="amount" placeholder="Amount" />
-      <button onclick="depositMoney()">Deposit</button>
-      <button onclick="withdrawMoney()">Withdraw</button>
-      <input type="number" id="receiverAccount" placeholder="Receiver account number" />
-      <button onclick="transferMoney()">Transfer</button>
-
+  <section class="features">
+    <div class="feature-card">
+      <h3>Secure Login</h3>
+      <p>Login using account number and PIN authentication.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Money Transfers</h3>
+      <p>Transfer money between accounts with transaction records.</p>
+    </div>
+    <div class="feature-card">
       <h3>Transaction History</h3>
-      <ul id="transactions"></ul>
-
-      <button class="logout" onclick="logout()">Logout</button>
-    </section>
-  </main>
+      <p>Track deposits, withdrawals, and transfers in real time.</p>
+    </div>
+  </section>
 
   <footer>
     <p>Built by Nehemya Assefa | DevAlpha C++ Internship Project</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
-</html> 
+</html>
